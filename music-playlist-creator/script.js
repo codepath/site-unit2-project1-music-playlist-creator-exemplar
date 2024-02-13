@@ -1,3 +1,5 @@
+import data from './data.js';
+
 // Event Listener: Update likes on playlist card (Hard Coded)
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.like-checkbox').forEach(checkbox => {

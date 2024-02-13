@@ -3,6 +3,7 @@ let data = { "playlists": [
       "playlistID": 0,
       "playlist_name": "Late Night Drive",
       "playlist_creator": "Melody Maven",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 0,
@@ -50,6 +51,7 @@ let data = { "playlists": [
       "playlistID": 1,
       "playlist_name": "That Summer '16 Feeling",
       "playlist_creator": "Groove Guardian",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 5,
@@ -97,6 +99,7 @@ let data = { "playlists": [
       "playlistID": 2,
       "playlist_name": "Workout Beats",
       "playlist_creator": "Harmony Herald",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 10,
@@ -144,6 +147,7 @@ let data = { "playlists": [
       "playlistID": 3,
       "playlist_name": "Road Trip Anthems",
       "playlist_creator": "Playlist Pioneer",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 15,
@@ -191,6 +195,7 @@ let data = { "playlists": [
       "playlistID": 4,
       "playlist_name": "Boss Chick Energy",
       "playlist_creator": "Tempo Tactician",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 20,
@@ -238,6 +243,7 @@ let data = { "playlists": [
       "playlistID": 5,
       "playlist_name": "Rainy Nights",
       "playlist_creator": "Sonic Sage",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 25,
@@ -285,6 +291,7 @@ let data = { "playlists": [
       "playlistID": 6,
       "playlist_name": "90's R&B",
       "playlist_creator": "Vinyl Virtuoso",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 30,
@@ -332,6 +339,7 @@ let data = { "playlists": [
       "playlistID": 7,
       "playlist_name": "Nothing But The Classics",
       "playlist_creator": "Echo Enthusiast",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 35,
@@ -379,6 +387,7 @@ let data = { "playlists": [
       "playlistID": 8,
       "playlist_name": "Ohh That Baseline",
       "playlist_creator": "Bassline Buddy",
+      "likeCount": 0,
       "songs": [
         {
           "songID": 40,
