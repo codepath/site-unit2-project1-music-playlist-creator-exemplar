@@ -28,7 +28,7 @@ music-playlist-creator/
 │   └── music/               # Optional music files
 │
 ├── data/                    # Data storage
-│   └── playlists.json       # Sample playlist data
+│   └── data.js              # Sample playlist data
 │
 └── README.md                # Project documentation
 ```
