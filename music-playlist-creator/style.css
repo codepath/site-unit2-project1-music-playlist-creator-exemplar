@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.playlist-gallery {
+    margin: 5rem;
+}
+
+.playlist-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(105%);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 0.5rem 0;
+}
+
+
+.card-stats {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.heart-icon {
+    cursor: pointer;
+    color: #000000; 
+    transition: color 0.3s ease;
+    
+    margin-right: 4px; 
+}
+
+.like-count {
+    margin-left: 1px;
+ 
+}
+
+
+.like-checkbox {
+    display: none; 
+}
+
+
+
+.like-checkbox:checked + .heart-icon {
+    color: #ff0000; 
+}
+
+.heart-icon:hover,
+.like-checkbox:checked + .heart-icon {
+    color: #ff0000; 
+}
+
+
+
+
+
+/* Overlay/Modal container */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 100; 
+}
+
+.modal-overlay.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 1s ease;
+    width: 80%; 
+    max-width: 600px;
+}
+
+
+.modal-overlay.active .modal-content {
+    transform: scale(1.05);
+}
