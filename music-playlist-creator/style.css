@@ -81,8 +81,7 @@ body {
 
 
 
-
-/* Overlay/Modal container */
+/* ----- Model Overlay ----- */
 .modal-overlay {
     position: fixed;
     top: 0;
@@ -106,7 +105,15 @@ body {
     transition: opacity 0.8s ease;
 }
 
-.modal-content {
+.modal-overlay.active .modal-content {
+    transform: scale(1.05);
+}
+
+
+
+/* ----- Model Content ----- */
+
+/* .modal-content {
     background: white;
     padding: 20px;
     border-radius: 10px;
@@ -114,9 +121,104 @@ body {
     transition: transform 1s ease;
     width: 80%; 
     max-width: 600px;
+} */
+
+
+
+
+.modal-content {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+    max-width: 600px; /* Adjust to your preference */
+    width: 100%;
+}
+
+.modal-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+.modal-header img {
+    width: 120px; /* Adjust to match the size of your cover art */
+    height: 120px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.modal-header .playlist-info {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.modal-header .playlist-info h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.modal-header .playlist-info p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 20px;
+    overflow-y: auto;
+    max-height: 400px; /* Adjust based on your needs */
+}
+
+.modal-body ul {
+    padding: 0;
+    list-style: none;
+}
+
+.modal-body li {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #f8f8f8;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    width: 580px;
+}
+
+.modal-body li img {
+    width: 50px; /* Adjust to your preference */
+    height: 50px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.modal-body li .song-info {
+    display: grid;
+    grid-gap: 2px;
+}
+
+.modal-body li .song-info .song-title {
+    font-weight: bold;
+}
+
+.modal-body li .song-info .song-artist,
+.modal-body li .song-info .song-album {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.modal-body li .song-duration {
+    font-size: 0.8rem;
+    color: #666;
 }
 
 
-.modal-overlay.active .modal-content {
-    transform: scale(1.05);
-}

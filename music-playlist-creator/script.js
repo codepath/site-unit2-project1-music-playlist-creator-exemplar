@@ -60,14 +60,42 @@ const attachCardClickEventListeners = () => {
             const playlist = data.playlists.find((p) => p.playlistID === playlistId);
             if (!playlist) return;
 
-            modalContent.innerHTML = `<h3>${playlist.playlist_name}</h3><p>Created by ${playlist.playlist_creator}</p>`;
+            // Create the modal header
+            const modalHeader = document.createElement('div');
+            modalHeader.classList.add('modal-header');
+            modalHeader.innerHTML = `
+                <img src="${playlist.songs[0].cover_art}" alt="Playlist Cover" class="playlist-cover">
+                <div class="playlist-info">
+                    <h3 class="playlist-title">${playlist.playlist_name}</h3>
+                    <p class="creator-name">Created by ${playlist.playlist_creator}</p>
+                </div>
+            `;
 
+            // Create the modal body
+            const modalBody = document.createElement('div');
+            modalBody.classList.add('modal-body');
             const songsList = document.createElement('ul');
             playlist.songs.forEach((song) => {
-                songsList.innerHTML += `<li>${song.title} by ${song.artist} from ${song.album}</li>`;
+                songsList.innerHTML += `
+                    <li>
+                        <img src="${song.cover_art}" alt="${song.title} Cover" class="song-cover">
+                        <div class="song-info">
+                            <span class="song-title">${song.title}</span>
+                            <span class="song-artist">${song.artist}</span>
+                            <span class="song-album">${song.album}</span>
+                        </div>
+                        <span class="song-duration">${song.duration}</span>
+                    </li>
+                `;
             });
+            modalBody.appendChild(songsList);
 
-            modalContent.appendChild(songsList);
+            // Clear existing content and append new content
+            modalContent.innerHTML = '';
+            modalContent.appendChild(modalHeader);
+            modalContent.appendChild(modalBody);
+
+            // Show the modal
             modalOverlay.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
