@@ -1,70 +1,82 @@
-import data from './data.js';
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalContent = document.querySelector('.modal-content');
 
-// Event Listener: Update likes on playlist card (Hard Coded)
+
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.like-checkbox').forEach(checkbox => {
-        const likeCountElement = checkbox.nextElementSibling.nextElementSibling; // Points to the like count span
-        const label = checkbox.nextElementSibling; // This should point to the label that is immediately following the checkbox
+    const playlistCardsContainer = document.querySelector('.playlist-cards');
 
-        // Attach stopPropagation to the label's click event
-        label.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent the click from triggering the card's click event
-        });
-        
-        // Handle changes to the checkbox (likes)
-        checkbox.addEventListener('change', function() {
+
+    if (typeof data === 'undefined') {
+        console.error('Data is not defined.');
+        return;
+    }
+
+    data.playlists.forEach((playlist) => {
+        const card = document.createElement('div');
+        card.classList.add('card');
+        card.setAttribute('data-playlist-id', playlist.playlistID);
+
+        card.innerHTML = `
+            <img src="${playlist.songs[0].cover_art}" alt="Playlist Cover">
+            <div class="card-content">
+                <h3 class="playlist-title">${playlist.playlist_name}</h3>
+                <p class="creator-name">${playlist.playlist_creator}</p>
+                <div class="card-stats">
+                    <input type="checkbox" id="like-${playlist.playlistID}" class="like-checkbox" aria-label="Like this playlist" />
+                    <label for="like-${playlist.playlistID}" class="heart-icon">♡</label>
+                    <span class="like-count">${playlist.likeCount}</span>
+                </div>
+            </div>
+        `;
+
+        playlistCardsContainer.appendChild(card);
+    });
+
+    attachLikeEventListeners();
+    attachCardClickEventListeners();
+});
+
+const attachLikeEventListeners = () => {
+    document.querySelectorAll('.heart-icon').forEach(icon => {
+        icon.addEventListener('click', (event) => event.stopPropagation());
+    });
+
+    document.querySelectorAll('.like-checkbox').forEach((checkbox) => {
+        const likeCountElement = checkbox.nextElementSibling.nextElementSibling;
+        checkbox.addEventListener('change', () => {
             let likeCount = parseInt(likeCountElement.textContent);
-            if (checkbox.checked) {
-                likeCount++;
-            } else {
-                likeCount = Math.max(likeCount - 1, 0); // Prevent negative numbers
-            }
+            likeCount = checkbox.checked ? likeCount + 1 : Math.max(likeCount - 1, 0);
             likeCountElement.textContent = likeCount;
         });
     });
-});
+};
 
-
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
+const attachCardClickEventListeners = () => {
     const cards = document.querySelectorAll('.card');
-    const modalOverlay = document.querySelector('.modal-overlay');
-    const modalContent = document.querySelector('.modal-content');
 
-    cards.forEach(card => {
-        card.addEventListener('click', function() {
-            const playlistId = this.getAttribute('data-playlist-id');
-            // Populate modalContent based on clicked card's data
-                // Clear existing content
-                modalContent.innerHTML = '';
+    cards.forEach((card) => {
+        card.addEventListener('click', () => {
+            const playlistId = parseInt(card.getAttribute('data-playlist-id'));
+            const playlist = data.playlists.find((p) => p.playlistID === playlistId);
+            if (!playlist) return;
 
-                // Generate and append new content based on playlistId
-                // For demonstration, this is placeholder logic
-                const details = document.createElement('p');
+            modalContent.innerHTML = `<h3>${playlist.playlist_name}</h3><p>Created by ${playlist.playlist_creator}</p>`;
 
-                // Populate with actual data as needed 👇🏽🔔
-                details.textContent = `Details for playlist ${playlistId}`;
-            
-                modalContent.appendChild(details);
-  
+            const songsList = document.createElement('ul');
+            playlist.songs.forEach((song) => {
+                songsList.innerHTML += `<li>${song.title} by ${song.artist} from ${song.album}</li>`;
+            });
 
-            // Show the modal overlay
+            modalContent.appendChild(songsList);
             modalOverlay.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            document.body.style.overflow = 'hidden';
         });
     });
 
-    // Hide the modal when the overlay is clicked
     modalOverlay.addEventListener('click', (e) => {
-        if (e.target === modalOverlay) { // Ensure the click is not on the modal content itself
+        if (e.target === modalOverlay) {
             modalOverlay.classList.remove('active');
-            document.body.style.overflow = ''; // Re-enable scrolling
+            document.body.style.overflow = '';
         }
     });
-});
-
-function populateModalContent(playlistId) {
-
-}
+};
