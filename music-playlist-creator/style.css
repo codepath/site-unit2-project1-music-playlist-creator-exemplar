@@ -114,18 +114,6 @@ body {
 
 /* ----- Model Content ----- */
 
-/* .modal-content {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    transform: scale(1);
-    transition: transform 1s ease;
-    width: 80%; 
-    max-width: 600px;
-} */
-
-
-
 
 .modal-content {
     background: #fff;
@@ -147,8 +135,8 @@ body {
 }
 
 .modal-header img {
-    width: 120px; /* Adjust to match the size of your cover art */
-    height: 120px; /* Maintain aspect ratio */
+    width: 120px;
+    height: 120px; 
     object-fit: cover;
     border-radius: 6px;
 }
@@ -222,4 +210,39 @@ body {
     color: #666;
 }
 
+.modal-header button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+.modal-header button:hover {
+    background-color: #0056b3;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px;
+    background-color: lightgrey; /* Adjust the background color as needed */
+}
+
+.add-playlist-button {
+    padding: 10px 20px;
+    background-color: #0d8a39; /* Button background */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+}
+
+.add-playlist-button:hover {
+    background-color: #0d8a39c0; 
+}
