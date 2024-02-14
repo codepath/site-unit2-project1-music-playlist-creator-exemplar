@@ -43,6 +43,16 @@ const populateModalContent = (playlist) => {
     updateSongsList(playlist.songs, modalContent);
 };
 
+
+// Event listener for clicks on the modal overlay to close the modal
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
+
+
 // Function to update songs list in the modal
 const updateSongsList = (songs, modalContent) => {
     const songsList = document.createElement('ul');
@@ -68,6 +78,7 @@ const updateSongsList = (songs, modalContent) => {
         modalContent.querySelector('.modal-body').appendChild(songsList);
     }
 };
+
 
 // Event listener for DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', () => {
@@ -109,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     attachCardClickEventListeners();
 });
 
+
 // Function to attach event listeners for card clicks
 const attachCardClickEventListeners = () => {
     const cards = document.querySelectorAll('.card');
@@ -124,6 +136,7 @@ const attachCardClickEventListeners = () => {
         });
     });
 };
+
 
 // Function to attach event listeners for like functionality
 const attachLikeEventListeners = () => {
@@ -142,10 +155,4 @@ const attachLikeEventListeners = () => {
     });
 };
 
-// Event listener for clicks on the modal overlay to close the modal
-modalOverlay.addEventListener('click', (e) => {
-    if (e.target === modalOverlay) {
-        modalOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-});
+
