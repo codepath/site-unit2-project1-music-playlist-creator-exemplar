@@ -16,7 +16,7 @@ const populateModalContent = (playlist) => {
     const modalHeader = document.createElement('div');
     modalHeader.classList.add('modal-header');
     modalHeader.innerHTML = `
-        <img src="${playlist.songs[0].cover_art}" alt="Playlist Cover" class="playlist-cover">
+        <img src="${playlist.playlist_art}" alt="Playlist Cover" class="playlist-cover">
         <div class="playlist-info">
             <h3 class="playlist-title">${playlist.playlist_name}</h3>
             <p class="creator-name">Created by ${playlist.playlist_creator}</p>
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Set the inner HTML of the card with playlist details
         card.innerHTML = `
-            <img src="${playlist.songs[0].cover_art}" alt="Playlist Cover" class="playlist-cover">
+            <img src="${playlist.playlist_art}" alt="Playlist Cover" class="playlist-cover">
             <div class="card-content">
                 <h3 class="playlist-title">${playlist.playlist_name}</h3>
                 <p class="creator-name">Created by ${playlist.playlist_creator}</p>
