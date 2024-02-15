@@ -300,6 +300,40 @@ Before moving on to the next milestone, ensure that:
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 4: Viewing Playlist Details</summary>
+
+
+
+## Goal
+
+The goal of this milestone is to allow users to view detailed information about a playlist in a modal when a playlist card is clicked.
+
+## Requirements
+
+### Setting Up the Modal
+
+1. **Create a Modal Structure**:
+   - In your `index.html`, create a structure for the modal overlay and modal content. The modal should initially be hidden.
+
+2. **Styling the Modal**:
+   - In your `style.css`, add styles for the modal overlay and content to create a centered pop-up effect. The modal should cover the entire viewport with a semi-transparent background.
+
+### Displaying Playlist Details
+
+3. **Dynamically Populate Modal Content**:
+   - In your `script.js`, write a function that populates the modal with detailed information about the clicked playlist. This should include the playlist's cover image, name, creator, and a list of songs with their titles, artists, and durations.
+
+4. **Opening and Closing the Modal**:
+   - Add event listeners to each playlist card to open the modal with the corresponding playlist details when clicked.
+   - Add an event listener to the modal overlay to close the modal when the overlay is clicked.
+
+#### Checkpoint
+
+Before moving on to the next milestone, ensure that:
+
+- Clicking on a playlist card opens a modal displaying detailed information about that playlist.
+- The modal can be closed by clicking on the overlay outside the modal content.
+- The modal displays all the required information about the playlist, including the list of songs.
+
 </details>
 
 <details>
