@@ -231,6 +231,39 @@ At this point, your application should have a basic structure with a sample play
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 2: Styling with CSS</summary>
+
+
+## Goal
+
+The goal for this milestone is to apply CSS styling to create a visually appealing and user-friendly interface for your Music Playlist Explorer application.
+
+## Requirements
+
+### Styling the Main Page
+
+1. **Header and Footer**:
+   - Style the header and footer of your page to differentiate them from the main content.
+   - Example: Set a background color, add padding, and center the text.
+
+2. **Playlist Cards**:
+   - Style the playlist cards to make them visually distinct and appealing.
+   - Example: Add borders, shadows, and hover effects.
+
+3. **Modal Styling**:
+   - Style the modal overlay and content to create a centered pop-up effect when a playlist card is clicked.
+   - Example: Set the background of the overlay, style the content area, and add animations for opening the modal.
+
+4. **Responsive Design**:
+   - Ensure that your application is responsive and looks good on different screen sizes using flexbox.
+
+#### Checkpoint
+
+Before moving on to the next milestone, ensure that:
+
+- Your header and footer are styled and clearly distinguishable from the main content.
+- The playlist cards have a consistent and appealing design, with visual feedback on hover.
+- The modal view is styled and centered, with a clear layout for displaying playlist details.
+
 </details>
 
 <details>
