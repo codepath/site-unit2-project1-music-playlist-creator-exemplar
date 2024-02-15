@@ -38,14 +38,35 @@ A simple version of the app with all the required features implemented:
 
 :::
 
+### Project Instructions
 
-### Project Insructions
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 0: Project Setup</summary>
+</details>
 
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 1: Adding Structure with HTML</summary>
+</details>
 
-TODO - Add milestones
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 2: Styling with CSS</summary>
+</details>
 
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 3: Displaying Shared Playlists</summary>
+</details>
 
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 4: Viewing Playlist Details</summary>
+</details>
 
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 5: Liking Playlists</summary>
+</details>
+
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 6: Shuffling Songs</summary>
+</details>
 
 
 ### Stretch Features
@@ -65,8 +86,6 @@ TODO - Add milestones
   - As users type in the search bar, dynamically update the displayed playlists to only show those that match the search query.
 - [ ] **Sorting Options**: Provide options for users to sort playlists by different criteria such as name, number of likes, or date added.
   - Implement dropdown or button options that reorder the displayed playlists based on the selected sorting criterion.
-
-
 
 ### 💡 Hints
 
