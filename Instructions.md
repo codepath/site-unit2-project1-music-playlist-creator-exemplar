@@ -42,6 +42,80 @@ A simple version of the app with all the required features implemented:
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 0: Project Setup</summary>
+
+## Goal
+
+The goal for this milestone is to cover all the setup needed at the beginning of this project, which includes:
+
+1. Creating the project structure
+2. Setting up the HTML, CSS, and JavaScript files
+3. Loading the starter data from a JSON file
+
+## Requirements
+
+### Create Project Structure
+
+1. Create a new directory for your project, for example, `music-playlist-explorer`.
+2. Inside this directory, create the following files and folders:
+   - `index.html`: This will be the main HTML file for your project.
+   - `style.css`: This will contain all the CSS styles for your project.
+   - `script.js`: This will contain the main JavaScript code for your project.
+   - `data/`: This will be a directory to store your JavaScript file containing the playlist data.
+
+### Setting Up HTML, CSS, and JavaScript Files
+
+1. Open your `index.html` file and set up the basic HTML structure. Link your CSS and JavaScript files by adding the following lines in the `<head>` section:
+
+   ```html
+   <link rel="stylesheet" href="style.css">
+   ```
+
+2. Add the following lines at the end of the `<body>` section to link your JavaScript files:
+
+   ```html
+   <script src="data/data.js"></script>
+   <script src="script.js"></script>
+   ```
+
+3. Start writing your CSS styles in `style.css`.
+4. Start writing your JavaScript logic in `script.js`.
+
+### Loading Starter Data
+
+1. Create a JavaScript file inside the `data/` directory, for example, `data.js`. This file will contain the initial data for your playlists in JSON format, assigned to a variable. For example:
+
+   ```javascript
+   let data = {
+     "playlists": [
+       {
+         "playlistID": 1,
+         "playlist_name": "Chill Vibes",
+         "playlist_creator": "DJ Cool",
+         "playlist_art": "path/to/image.jpg",
+         "songs": [
+           {
+             "title": "Relaxing Song",
+             "artist": "Artist Name",
+             "album": "Album Title",
+             "duration": "3:45",
+             "cover_art": "path/to/song/image.jpg"
+           },
+           // More songs...
+         ]
+       },
+       // More playlists...
+     ]
+   };
+   ```
+
+2. In your `script.js`, you can reference the `data` variable to access the playlist data, as it is globally available due to the order of the script tags in the HTML file.
+
+## Running the Project
+
+1. Open your project directory in a code editor of your choice.
+2. Open the `index.html` file in a web browser to view your project.
+3. As you make changes to your HTML, CSS, or JavaScript files, refresh the browser to see the updates.
+
 </details>
 
 <details>
