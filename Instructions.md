@@ -65,3 +65,36 @@ TODO - Add milestones
   - As users type in the search bar, dynamically update the displayed playlists to only show those that match the search query.
 - [ ] **Sorting Options**: Provide options for users to sort playlists by different criteria such as name, number of likes, or date added.
   - Implement dropdown or button options that reorder the displayed playlists based on the selected sorting criterion.
+
+
+
+### 💡 Hints
+
+<!--- Hints go here, in Q&A format -->
+
+- Help! I don't know where to start!
+  - As always, a good starting place would be to set up the XML Layout for your app.
+  - Look at this weeks lab for examples on how to implement similar applications.  What code will be similar?  What do you need to change?
+
+- I'm stuck on something!
+  - Don't just skip the Resources section!
+  - Still need a little extra help getting started or running into an error?  Try posting in the [Discussions](https://discussions.codepath.com/).
+
+- How do I dynamically render playlists on the homepage?
+  - Use JavaScript to iterate over the playlist data from the JSON file and create HTML elements for each playlist. Then, append these elements to the playlist container on the homepage.
+  - You can use the `createElement` and `appendChild` methods in JavaScript to create and add new elements to the DOM.
+
+- How can I update the like count when a playlist is liked?
+  - Add an event listener to the like button for each playlist. When the button is clicked, increment the like count for that playlist and update the displayed count in the DOM.
+  - You may need to use a variable or data attribute to keep track of the like count for each playlist.
+
+- How do I create a modal view for playlist details?
+  - Create a hidden modal element in your HTML with a structure for displaying playlist details. Use CSS to style the modal and make it appear centered and above the rest of the content.
+  - Use JavaScript to populate the modal with the details of the clicked playlist and to toggle the visibility of the modal when a playlist tile is clicked or when the modal is closed.
+
+- How can I shuffle the songs in a playlist?
+  - Write a function that takes an array of songs and rearranges the elements in a random order.
+  - When the shuffle button in the modal is clicked, call this function with the current playlist's songs array and update the displayed song list in the modal.
+
+<!--- This dynamically inserts the submission guidelines, as specified in another file. -->
+<%= insert('pages/submission_reminder_snippet.md') %>
