@@ -37,3 +37,31 @@ A simple version of the app with all the required features implemented:
 </video></center>
 
 :::
+
+
+### Project Insructions
+
+
+TODO - Add milestones
+
+
+
+
+
+### Stretch Features
+
+#### (Optional) Playlist Management Features
+
+- [ ] **Add New Playlists**: Allow users to create new playlists by providing a form to input playlist details and song information.
+  - Users can input playlist name, creator, and add multiple songs with details like title, artist, and duration.
+- [ ] **Edit Existing Playlists**: Enable users to modify the details of existing playlists.
+  - Implement an edit button on each playlist tile that opens a form pre-populated with the current playlist details, allowing users to update the name, creator, and songs.
+- [ ] **Delete Playlists**: Enable users to delete playlists from the homepage.
+  - Implement a delete button on each playlist tile that, when clicked, removes the playlist from the display and data model.
+
+#### (Optional) Advanced Interactivity Features
+
+- [ ] **Search Functionality**: Implement a search bar to allow users to filter playlists by name or creator.
+  - As users type in the search bar, dynamically update the displayed playlists to only show those that match the search query.
+- [ ] **Sorting Options**: Provide options for users to sort playlists by different criteria such as name, number of likes, or date added.
+  - Implement dropdown or button options that reorder the displayed playlists based on the selected sorting criterion.
