@@ -120,6 +120,113 @@ The goal for this milestone is to cover all the setup needed at the beginning of
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 1: Adding Structure with HTML</summary>
+
+
+
+## Goal
+
+The goal of this milestone is to set up the basic structure of your web application using HTML. This includes creating the main layout, adding a sample playlist card, and setting up a modal for displaying playlist details.
+
+## Requirements
+
+1. **Create the Main Layout**:
+   - Open your `index.html` file.
+   - Set up the basic structure of your application with a header, a main section for the playlist gallery, and a footer.
+
+    ```html
+    <header>
+        <div class="header-container">
+            <h1>Music Playlist Explorer</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="playlist-gallery">
+            <!-- Playlist cards will be dynamically inserted here -->
+        </section>
+
+        <!-- Modal overlay will be added here -->
+    </main>
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+    ```
+
+2. **Create Playlist Card Container**:
+   - Inside the main section, create a container for the playlist cards with the class `playlist-cards`.
+
+    ```html
+    <div class="playlist-cards">
+        <!-- Playlist cards will be dynamically inserted here -->
+    </div>
+    ```
+
+3. **Add a Sample Playlist Card**:
+   - Inside the `playlist-cards` container, add a hard-coded playlist card.
+   - This card should include an image, playlist title, creator name, and like count.
+   - This will serve as a template for styling and will be replaced with dynamic content in later milestones.
+
+    ```html
+    <!-- Sample Playlist Card -->
+    <div class="card">
+        <img src="path/to/sample-image.jpg" alt="Playlist Cover" class="playlist-cover">
+        <div class="card-content">
+            <h3 class="playlist-title">Sample Playlist</h3>
+            <p class="creator-name">Created by John Doe</p>
+            <div class="card-stats">
+                <span class="like-count">42 Likes</span>
+            </div>
+        </div>
+    </div>
+    <!-- End of Sample Playlist Card -->
+    ```
+
+4. **Create Modal Overlay**:
+   - Outside the main section, create a modal overlay structure with the class `modal-overlay`.
+   - This will be used to display the modal content.
+
+    ```html
+    <div class="modal-overlay">
+        <!-- Modal content will be dynamically added and removed from here -->
+    </div>
+    ```
+
+5. **Create Modal Content Container**:
+   - Inside the modal overlay, create a container for the modal content with the class `modal-content`.
+
+    ```html
+    <div class="modal-content">
+        <!-- Modal content will be dynamically added and removed from here -->
+    </div>
+    ```
+
+6. **Add Sample Modal Content**:
+   - Inside the `modal-content` container, add hard-coded content for the modal.
+   - This should include a close button, playlist details, and a list of songs.
+   - Initially, this modal can be hard-coded with sample data.
+
+    ```html
+    <!-- Sample Modal Content -->
+    <div class="modal-header">
+        <img src="path/to/sample-image.jpg" alt="Playlist Cover" class="playlist-cover">
+        <div class="playlist-info">
+            <h3 class="playlist-title">Sample Playlist</h3>
+            <p class="creator-name">Created by John Doe</p>
+        </div>
+    </div>
+    <div class="modal-body">
+        <ul>
+            <li>Song 1 - Artist 1</li>
+            <!-- More songs -->
+        </ul>
+    </div>
+    <!-- End of Sample Modal Content -->
+    ```
+
+### Checkpoint
+
+At this point, your application should have a basic structure with a sample playlist card and a modal layout. You can now proceed to styling these elements in the next milestone.
 </details>
 
 <details>
