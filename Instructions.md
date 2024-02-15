@@ -338,10 +338,69 @@ Before moving on to the next milestone, ensure that:
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 5: Liking Playlists</summary>
+
+## Goal
+
+The goal of this milestone is to implement the functionality for users to like playlists by clicking a heart icon on each playlist card.
+
+## Requirements
+
+### Adding Like Icons
+
+1. **Update Playlist Cards**:
+   - Modify the HTML structure of each playlist card to include a heart icon for the like button.
+   - You can use an emoji, an image, or a font icon library like Font Awesome for the heart icon.
+
+2. **Styling the Like Icon**:
+   - In your `style.css`, add styles for the like icon. Ensure that the icon is visually distinct and changes appearance when hovered or clicked.
+
+#### Implementing Like Functionality
+
+3. **JavaScript Logic for Liking**:
+   - In your `script.js`, add an event listener to each like icon that increments the like count for the corresponding playlist when clicked.
+   - Ensure that the like count is updated both in the data model and on the playlist card.
+
+#### Checkpoint
+
+Before moving on to the next milestone, ensure that:
+
+- Each playlist card has a like icon that users can click.
+- Clicking the like icon increments the like count for that playlist.
+- The updated like count is reflected on the playlist card.
 </details>
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 6: Shuffling Songs</summary>
+
+## Goal
+
+The goal of this milestone is to add functionality to shuffle the songs within a playlist when the user clicks a shuffle button in the playlist detail modal.
+
+## Requirements
+
+### Adding Shuffle Button
+
+1. **Update Playlist Modal**:
+   - Modify the HTML structure of the playlist modal to include a shuffle button.
+   - You can use a simple button element with the text "Shuffle" for this purpose.
+
+2. **Styling the Shuffle Button**:
+   - In your `style.css`, add styles for the shuffle button. Ensure that the button is visually distinct and changes appearance when hovered or clicked.
+
+### Implementing Shuffle Functionality
+
+3. **JavaScript Logic for Shuffling**:
+   - In your `script.js`, add an event listener to the shuffle button that shuffles the order of songs in the playlist when clicked.
+   - Ensure that the shuffled songs are updated both in the data model and in the modal view.
+
+#### Checkpoint
+
+Before moving on to the next milestone, ensure that:
+
+- Each playlist modal has a shuffle button that users can click.
+- Clicking the shuffle button rearranges the order of songs in the playlist.
+- The shuffled songs are displayed in the modal view.
+
 </details>
 
 
