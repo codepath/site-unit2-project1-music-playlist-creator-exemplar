@@ -268,6 +268,34 @@ Before moving on to the next milestone, ensure that:
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 3: Displaying Shared Playlists</summary>
+
+
+## Goal
+
+The goal of this milestone is to dynamically render the shared playlists on the homepage using data from the provided JSON file.
+
+## Requirements
+
+### Setting Up the Data
+
+1. **Create a JSON File**:
+   - Create a file named `data.js` inside the `data/` directory.
+   - Define a variable `data` that contains an array of playlist objects. Each playlist should have properties such as `playlistID`, `playlist_name`, `playlist_creator`, `playlist_art`, and `songs`.
+
+### Displaying Playlists
+
+2. **Dynamically Create Playlist Cards**:
+   - In your `script.js`, write a function that iterates over the `data.playlists` array and creates a card for each playlist.
+   - Each card should display the playlist's cover image, name, creator, and like count.
+   - Append the created cards to the `playlist-cards` container in your HTML.
+
+#### Checkpoint
+
+Before moving on to the next milestone, ensure that:
+
+- The `data.js` file is properly set up with the shared playlists data.
+- Your application dynamically creates and displays playlist cards on the homepage based on the data from `data.js`.
+- Each playlist card shows the relevant information (cover image, name, creator, like count) as specified in the JSON file.
 </details>
 
 <details>
