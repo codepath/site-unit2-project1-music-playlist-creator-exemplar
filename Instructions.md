@@ -45,66 +45,41 @@ A simple version of the app with all the required features implemented:
 
 ## Goal
 
-The goal for this milestone is to cover all the setup needed at the beginning of this project, which includes:
+The goal for this milestone is to familiarize yourself with the project structure and files that have been provided as starter code.
 
-1. Creating the project structure
-2. Setting up the HTML, CSS, and JavaScript files
-3. Loading the starter data from a JSON file
+## Walkthrough
 
-## Requirements
+1. You will begin by forking the provided [public repository](https://github.com/codepath/site-unit2-project1-music-playlist-explorer-starter/) which contains the initial setup for the project.
+2. Once forked, clone the repository to your local machine to start working on the project.
 
-### Create Project Structure
+### Explore the Project Structure
 
-1. Create a new directory for your project, for example, `music-playlist-explorer`.
-2. Inside this directory, create the following files and folders:
-   - `index.html`: This will be the main HTML file for your project.
-   - `style.css`: This will contain all the CSS styles for your project.
-   - `script.js`: This will contain the main JavaScript code for your project.
-   - `data/`: This will be a directory to store your JavaScript file containing the playlist data.
+Navigate through the project directory to explore the files and folders that have been set up for you:
 
-### Setting Up HTML, CSS, and JavaScript Files
+- `index.html`: The main HTML file for your project, with links to CSS and JavaScript files.
+- `style.css`: Contains starter styles for your application.
+- `script.js`: The main JavaScript file where you'll write your application's functionality.
+- `data/`: A directory containing `data.json`, which has sample playlist data.
+- `assets/`: This directory can be used to store images, icons, and any other assets you may need.
 
-1. Open your `index.html` file and set up the basic HTML structure. Link your CSS and JavaScript files by adding the following lines in the `<head>` section:
+### Understand the Starter Code
 
-   ```html
-   <link rel="stylesheet" href="style.css">
-   ```
+- Open `index.html` to see the basic HTML structure and how CSS and JavaScript files are linked.
+- Review `style.css` to understand the starter styles that have been applied.
+- Look at `script.js` to see the JavaScript functions that are provided.
+- Check out `data/data.json` to understand the structure of the playlist data you'll be working with.
 
-2. Add a website title and favicon to the browser tab by adding the following lines in the `<head>` section:
+### Run the Project
 
-   ```html
-   <title>Music Playlist Explorer</title>
-   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-   ```
+After you have familiarized yourself with the project files:
 
-3. Add the following lines at the end of the `<body>` section to link your JavaScript files:
-
-   ```html
-   <script src="data/data.js"></script>
-   <script src="script.js"></script>
-   ```
-
-4. Start writing your CSS styles in `style.css`.
-5. Start writing your JavaScript logic in `script.js`.
-
-### Loading Starter Data
-
-1. Inside the `data/` directory, you'll find a `data.json` file which contains a set of sample playlist data to get you started. Feel free to customize this data to personalize your project. If you're unfamiliar with editing JSON files or want to generate more sample data, consider using ChatGPT to learn about JSON structure and get assistance with creating your own data entries.
-
-2. In your `script.js`, you can reference the `data` variable to access the playlist data, as it is globally available due to the order of the script tags in the HTML file.
-
-## Running the Project
-
-1. Open your project directory in VS Code.
-2. Open the `index.html` file in a web browser to view your project.
-3. As you make changes to your HTML, CSS, or JavaScript files, refresh the browser to see the updates.
+1. Open the `index.html` file in a web browser to see the current state of the project.
+2. Modify the HTML, CSS, and JavaScript files as needed while you complete the project milestones.
 
 </details>
 
 <details>
 <summary style="font-size:1.2em; font-weight: 600">Milestone 1: Adding Structure with HTML</summary>
-
-
 
 ## Goal
 
