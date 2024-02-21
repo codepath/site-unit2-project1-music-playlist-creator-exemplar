@@ -259,3 +259,73 @@ body {
 .modal-header button:hover {
     background-color: #0056b3;
 }
+
+
+/* Feature Page CSS */
+
+.featured-playlist {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px;
+}
+
+.playlist-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.playlist-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.playlist-image img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.playlist-name {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.song-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.song-list li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.song-info {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.song-title {
+    font-weight: bold;
+}
+
+.song-artist,
+.song-album,
+.song-duration {
+    font-size: 0.8rem;
+    color: #666;
+}
