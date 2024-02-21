@@ -89,31 +89,7 @@ The goal for this milestone is to cover all the setup needed at the beginning of
 
 ### Loading Starter Data
 
-1. Create a JavaScript file inside the `data/` directory, for example, `data.js`. This file will contain the initial data for your playlists in JSON format, assigned to a variable. For example:
-
-   ```javascript
-   let data = {
-     "playlists": [
-       {
-         "playlistID": 1,
-         "playlist_name": "Chill Vibes",
-         "playlist_creator": "DJ Cool",
-         "playlist_art": "path/to/image.jpg",
-         "songs": [
-           {
-             "title": "Relaxing Song",
-             "artist": "Artist Name",
-             "album": "Album Title",
-             "duration": "3:45",
-             "cover_art": "path/to/song/image.jpg"
-           },
-           // More songs...
-         ]
-       },
-       // More playlists...
-     ]
-   };
-   ```
+1. Inside the `data/` directory, you'll find a `data.json` file which contains a set of sample playlist data to get you started. Feel free to customize this data to personalize your project. If you're unfamiliar with editing JSON files or want to generate more sample data, consider using ChatGPT to learn about JSON structure and get assistance with creating your own data entries.
 
 2. In your `script.js`, you can reference the `data` variable to access the playlist data, as it is globally available due to the order of the script tags in the HTML file.
 
