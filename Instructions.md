@@ -119,7 +119,7 @@ The goal for this milestone is to cover all the setup needed at the beginning of
 
 ## Running the Project
 
-1. Open your project directory in a code editor of your choice.
+1. Open your project directory in VS Code.
 2. Open the `index.html` file in a web browser to view your project.
 3. As you make changes to your HTML, CSS, or JavaScript files, refresh the browser to see the updates.
 
