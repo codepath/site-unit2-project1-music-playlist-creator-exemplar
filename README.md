@@ -19,9 +19,11 @@ Users can interact with playlists displayed as tiles, view detailed information 
 ```txt
 music-playlist-creator/
 │
-├── index.html               # Main entry point of the application
+├── index.html               # Main entry point of the application / Featured view
+├── all.html                 # Playlist grid view
 ├── style.css                # Application styles
-├── script.js                # Core functionality and event handling
+├── featured-script.js       # Core functionality and event handling for Featured view
+├── all-script.js            # Core functionality and event handling for Playlist grid view
 │
 ├── assets/                  # Static resources
 │   ├── img/                 # Images and icons
