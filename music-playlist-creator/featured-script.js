@@ -11,7 +11,16 @@ const displayRandomPlaylist = () => {
     songList.innerHTML = '';
     playlist.songs.forEach(song => {
         const songItem = document.createElement('li');
-        songItem.textContent = `${song.title} - ${song.artist}`;
+        songItem.classList.add('song-item');
+        songItem.innerHTML = `
+            <img src="${song.cover_art}" alt="${song.title} Cover" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">${song.title}</span>
+                <span class="song-artist">${song.artist}</span>
+                <span class="song-album">${song.album}</span>
+                <span class="song-duration">${song.duration}</span>
+            </div>
+        `;
         songList.appendChild(songItem);
     });
 };
