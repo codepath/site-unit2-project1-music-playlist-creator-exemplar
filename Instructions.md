@@ -224,9 +224,12 @@ The goal of this milestone is to set up the basic structure of your web applicat
     <!-- End of Sample Modal Content -->
     ```
 
+:::warning
 ### Checkpoint
 
 At this point, your application should have a basic structure with a sample playlist card and a modal layout. You can now proceed to styling these elements in the next milestone.
+:::
+
 </details>
 
 <details>
@@ -256,6 +259,7 @@ The goal for this milestone is to apply CSS styling to create a visually appeali
 4. **Responsive Design**:
    - Ensure that your application is responsive and looks good on different screen sizes using flexbox.
 
+:::warning
 #### Checkpoint
 
 Before moving on to the next milestone, ensure that:
@@ -263,6 +267,7 @@ Before moving on to the next milestone, ensure that:
 - Your header and footer are styled and clearly distinguishable from the main content.
 - The playlist cards have a consistent and appealing design, with visual feedback on hover.
 - The modal view is styled and centered, with a clear layout for displaying playlist details.
+:::
 
 </details>
 
@@ -289,6 +294,7 @@ The goal of this milestone is to dynamically render the shared playlists on the 
    - Each card should display the playlist's cover image, name, creator, and like count.
    - Append the created cards to the `playlist-cards` container in your HTML.
 
+:::warning
 #### Checkpoint
 
 Before moving on to the next milestone, ensure that:
@@ -296,6 +302,8 @@ Before moving on to the next milestone, ensure that:
 - The `data.js` file is properly set up with the shared playlists data.
 - Your application dynamically creates and displays playlist cards on the homepage based on the data from `data.js`.
 - Each playlist card shows the relevant information (cover image, name, creator, like count) as specified in the JSON file.
+:::
+
 </details>
 
 <details>
@@ -326,6 +334,7 @@ The goal of this milestone is to allow users to view detailed information about 
    - Add event listeners to each playlist card to open the modal with the corresponding playlist details when clicked.
    - Add an event listener to the modal overlay to close the modal when the overlay is clicked.
 
+:::warning
 #### Checkpoint
 
 Before moving on to the next milestone, ensure that:
@@ -333,6 +342,7 @@ Before moving on to the next milestone, ensure that:
 - Clicking on a playlist card opens a modal displaying detailed information about that playlist.
 - The modal can be closed by clicking on the overlay outside the modal content.
 - The modal displays all the required information about the playlist, including the list of songs.
+:::
 
 </details>
 
@@ -360,6 +370,7 @@ The goal of this milestone is to implement the functionality for users to like p
    - In your `script.js`, add an event listener to each like icon that increments the like count for the corresponding playlist when clicked.
    - Ensure that the like count is updated both in the data model and on the playlist card.
 
+:::warning
 #### Checkpoint
 
 Before moving on to the next milestone, ensure that:
@@ -367,6 +378,8 @@ Before moving on to the next milestone, ensure that:
 - Each playlist card has a like icon that users can click.
 - Clicking the like icon increments the like count for that playlist.
 - The updated like count is reflected on the playlist card.
+:::
+
 </details>
 
 <details>
@@ -393,6 +406,7 @@ The goal of this milestone is to add functionality to shuffle the songs within a
    - In your `script.js`, add an event listener to the shuffle button that shuffles the order of songs in the playlist when clicked.
    - Ensure that the shuffled songs are updated both in the data model and in the modal view.
 
+:::warning
 #### Checkpoint
 
 Before moving on to the next milestone, ensure that:
@@ -400,6 +414,7 @@ Before moving on to the next milestone, ensure that:
 - Each playlist modal has a shuffle button that users can click.
 - Clicking the shuffle button rearranges the order of songs in the playlist.
 - The shuffled songs are displayed in the modal view.
+:::
 
 </details>
 
