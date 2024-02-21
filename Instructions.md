@@ -70,15 +70,22 @@ The goal for this milestone is to cover all the setup needed at the beginning of
    <link rel="stylesheet" href="style.css">
    ```
 
-2. Add the following lines at the end of the `<body>` section to link your JavaScript files:
+2. Add a website title and favicon to the browser tab by adding the following lines in the `<head>` section:
+
+   ```html
+   <title>Music Playlist Explorer</title>
+   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+   ```
+
+3. Add the following lines at the end of the `<body>` section to link your JavaScript files:
 
    ```html
    <script src="data/data.js"></script>
    <script src="script.js"></script>
    ```
 
-3. Start writing your CSS styles in `style.css`.
-4. Start writing your JavaScript logic in `script.js`.
+4. Start writing your CSS styles in `style.css`.
+5. Start writing your JavaScript logic in `script.js`.
 
 ### Loading Starter Data
 
