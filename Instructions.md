@@ -347,6 +347,59 @@ Before moving on to the next milestone, ensure that:
 </details>
 
 
+<details>
+<summary style="font-size:1.2em; font-weight: 600">Milestone 7: Create a Featured Home Page</summary>
+
+## Goal
+
+The goal of this milestone is to create a new "Featured" page that serves as the home page of your application. This page will display a random playlist from the list of data, with an enlarged version of the playlist image and the playlist name on the left, and the songs of the playlist listed on the right.
+
+## Requirements
+
+### Setting Up the Featured Page
+
+1. **Create a New HTML File**:
+   - Create a new HTML file named `featured.html` for the Featured page.
+   - Set up the basic HTML structure with a header, main section, and footer.
+   - Link your CSS and JavaScript files.
+
+2. **Design the Layout**:
+   - The layout should include a section for the enlarged playlist image and name on the left, and another section for the song list on the right.
+   - Use the provided wireframe as a reference to design the layout of the Featured page.
+
+   ![Wireframe for Milestone 7](/project_2/wireframe_g.png)
+
+### Displaying a Random Playlist
+
+3. **JavaScript for Random Playlist**:
+   - In your JavaScript file, write a function to select a random playlist from the data and display its details on the Featured page.
+   - Update the playlist image, name, and list of songs dynamically based on the selected playlist.
+
+### Styling the Featured Page
+
+4. **CSS for Featured Page**:
+   - Style the Featured page to match the design shown in the wireframe.
+   - Ensure that the playlist image and name are enlarged and positioned on the left, with the song list on the right.
+
+:::warning
+#### Checkpoint
+
+Before moving on, ensure that:
+
+- The Featured page displays a random playlist with its image, name, and songs.
+- The layout and styling of the Featured page match the provided wireframe.
+- The playlist details and song list are dynamically updated based on the selected random playlist.
+:::
+
+:::info
+**Note**: You can choose to make the Featured page the home page of your application by renaming the `featured.html` file to `index.html` and adjusting the navigation links accordingly. This allows for flexibility in how the pages are structured and presented in the final application.
+:::
+
+</details>
+
+
+
+
 ### Stretch Features
 
 #### (Optional) Playlist Management Features
