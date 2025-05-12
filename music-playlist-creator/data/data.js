@@ -53,7 +53,7 @@ let data = { "playlists": [
       "playlist_name": "That Summer '16 Feeling",
       "playlist_creator": "Groove Guardian",
       "playlist_art": "https://picsum.photos/id/117/200",
-      "likeCount": 0,
+      "likeCount": 25,
       "songs": [
         {
           "songID": 5,
@@ -102,7 +102,7 @@ let data = { "playlists": [
       "playlist_name": "Workout Beats",
       "playlist_creator": "Harmony Herald",
       "playlist_art": "https://picsum.photos/id/1077/200",
-      "likeCount": 0,
+      "likeCount": 10,
       "songs": [
         {
           "songID": 10,
@@ -200,7 +200,7 @@ let data = { "playlists": [
       "playlist_name": "Boss Chick Energy",
       "playlist_creator": "Tempo Tactician",
       "playlist_art": "https://picsum.photos/id/449/200",
-      "likeCount": 0,
+      "likeCount": 100,
       "songs": [
         {
           "songID": 20,
